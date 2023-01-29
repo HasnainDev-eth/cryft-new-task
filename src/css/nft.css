@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body,
+html {
+    height: 100%;
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+};
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  .card {
+    padding: 2.4rem;
+    width: 35rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+  }
+  
+  .img-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .img-container img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .description {
+    margin-top: 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    display: block;
+    padding: 0 0 2.4rem 0;
+  }
+  
+  .equilibrium-description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+  }
+  
+  .etherium-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding: 2.6rem 0;
+  }
+  
+  
+  .etherium-price {
+    font-size: 1.8rem;
+    color: hsl(178, 100%, 50%);
+  }
+  
+  .etherium-left {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  
+  .creator-container {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+    padding: 1.8rem 0 1rem;
+  }
+  
+  .creator-photo {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+  }
+  
+  .creator-container p {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+  }
+  
+  .creator-container p span {
+    color: hsl(215, 51%, 70%);
+  }
+  
+  .etherium-icon-text {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 247, 0.5);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .image-overlay:hover {
+    opacity: 1;
+  }
+  
+  /* 
+  .etherium-container .etherium-photo:hover+.view {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  } */
+  
+  @media (max-width:24em) {
+    .card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }

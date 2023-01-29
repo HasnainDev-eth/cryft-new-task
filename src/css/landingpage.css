@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body,html{
+  
+    height: 100%;
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+   
+}
+.mainpage-div{
+    height: 100%;
+    width: 50%;
+    padding: 2rem 0rem;
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+    border-radius: 9px;
+}
+
+.Egg{
+    width: 60px;
+    cursor: pointer;
+}
+.mainpage-div img{
+    margin: 0 auto;
+    display: block;
+    padding-top: 10px;
+}
+
+.mainpage-div h2{
+    color: #fff;
+    text-align: center;
+    font-family: Ubuntu,Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+@media only screen and (max-width: 680px) {
+    .mainpage-div h2{
+       
+        font-size: 32px;
+    
+    }
+}
+
+.mainpage-div h3{
+    color: #0ca594;
+    text-align: center;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 680px) {
+    .mainpage-div h3{
+       
+        
+            font-size: 16px;
+            font-weight: 700;
+        
+    
+    }
+}
+
+.mainpage-div button{
+    border: 0;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 100%;
+    background: #013f85;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Ubuntu,Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 680px) {
+    .mainpage-div button {
+        border: 0;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0.75rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: 100%;
+    background: #013f85;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 800;
+    }
+}
+.mainpage-div button:hover{
+    background: #02314f;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
+
+@media (max-width:576px)
+{
+    .col-6 button{
+        font-size: 18px;
+    }
+
+}
+
+.popup-content{
+    background: #000000e3 !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    height: 75% !important;
+    width: 30% !important;
+    padding: 5rem 2rem !important;
+    border: none !important;
+    text-align: center;
+    margin-top: -50px !important;
+    position: absolute !important;
+    z-index: 999 !important;
+    pointer-events: auto !important;
+    top: 50% !important;
+    transform: translate(-50%, -35%) !important;
+    left: 50% !important;
+}
+.logins button{
+    display: flex;
+    border-radius: 10px;
+    padding: 8px 2rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 9rem; */
+    cursor: pointer;
+}
+.email_input{
+    text-align: center;
+    padding-top: 5rem;
+    width: 100%;
+    gap: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: zoomin 300ms ease-in-out forwards;
+}
+.email-login {
+    
+        color: white;
+        font-size: 32px;
+        font-weight: 700;
+        font-family: Ubuntu,Arial, Helvetica, sans-serif;
+        
+     
+}
+@keyframes zoomin {
+    0%{
+        transform: scale(0.75);
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.email_input h1 {
+    font-size: 16px;
+    width: fit-content;
+    color: white;
+}
+.email_input input {
+    width: 100%; 
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background: white;
+    border: none;
+
+}
+.email_input button{ 
+    border: 0;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 100%;
+    background: #013f85;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Ubuntu,Arial, Helvetica, sans-serif;
+}
+
+.email_input button:hover{ 
+    cursor: pointer;
+    background: #02314f;
+ transition: 300ms ease-in-out;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.wallet-image{
+    width: 40px;
+}
+@media only screen and (max-width: 1280px) {
+    .mainpage-div{
+        width: 60%;
+}
+.popup-content{
+    width: 36% !important;
+    top: 47% !important;
+}
+}
+@media only screen and (max-width: 1080px) {
+    .mainpage-div{
+        width: 100%;
+}
+}
+@media only screen and (max-width: 880px) {
+    .mainpage-div{
+        width: 100%;
+}
+.popup-content{
+    width: 46% !important;
+    top: 47% !important;
+}
+}
+@media only screen and (max-width: 680px) {
+    .mainpage-div{
+        width: 80%;
+}
+.popup-content{
+    width: 66% !important;
+    top: 44% !important;
+}
+}
+@media only screen and (max-width: 580px) {
+    .mainpage-div{
+        width: 90%;
+}
+.wallet-image {
+    width: 32px;
+}
+.popup-content{
+    width: 90% !important;
+    top: 44% !important;
+}
+}

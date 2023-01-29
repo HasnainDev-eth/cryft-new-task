@@ -1,0 +1,70 @@
+.landingpage-container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.landingpage-innerContainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 680px) {
+   .landingpage-innerContainer{
+    width: 100%;
+   }
+}
+.button-div-landingPage{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.login_methods{
+width: 100% !important;
+height: 100% !important;
+animation: sclae-up 300ms ease-in-out forwards;
+}
+@keyframes sclae-up {
+    0%{
+        transform: scale(0.75);
+        opacity: 0.4;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.login_methods h3{
+    font-size: 24px;
+    margin-bottom: 5rem;
+    color: white;
+    font-weight: bold;
+    }
+.login_methods button{
+        border: none !important;
+color: white;
+    background-color:#153D4E ;
+ }
+ .login_methods button:hover{
+        
+    color: white;
+    transition: ease-in-out 300ms;
+        background-color:#0d2732 ;
+     }
+ .login_methods button > h2{
+        margin: 0;
+font-size: 24px;
+font-family: Ubuntu,Arial, Helvetica, sans-serif;
+     }
+     @media only screen and (max-width: 580px) {
+        .login_methods button > h2{
+        
+            font-size: 14px;
+            margin: 0;
+                 }
+     }
+.logins{
+    width: 100% !important;
+}
+.popup-arrow{
+    display: none;
+} 
